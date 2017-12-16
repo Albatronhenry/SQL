@@ -28,3 +28,5 @@ kill oracle 进程 或者关掉oracle
 
 > `sqlplus sys as sysdba `  
 > `startup;  `
+
+[reference website](http://blog.csdn.net/u010098331/article/details/50767102)
