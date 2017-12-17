@@ -1,5 +1,4 @@
-# SQL
-很早之前写的文章，重新回顾和学习下，也可以看这篇文章说明。
+### SQL--MySQL 四种事务隔离级的说明
 
 按照SQL:1992 事务隔离级别，InnoDB默认是可重复读的（REPEATABLE READ）。MySQL/InnoDB 提供SQL标准所描述的所有四个事务隔离级别。你可以在命令行用--transaction-isolation选项，或在选项文件里，为所有连接设置默认隔离级别。
 例如，你可以在my.inf文件的[mysqld]节里类似如下设置该选项：
