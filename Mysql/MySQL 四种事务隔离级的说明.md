@@ -1,12 +1,15 @@
 ### SQL--MySQL 四种事务隔离级的说明
 
 按照SQL:1992 事务隔离级别，InnoDB默认是可重复读的（REPEATABLE READ）。MySQL/InnoDB 提供SQL标准所描述的所有四个事务隔离级别。你可以在命令行用--transaction-isolation选项，或在选项文件里，为所有连接设置默认隔离级别。
+
 例如，你可以在my.inf文件的[mysqld]节里类似如下设置该选项：
 
-transaction-isolation = {READ-UNCOMMITTED | READ-COMMITTED | REPEATABLE-READ | SERIALIZABLE}
+`transaction-isolation = {READ-UNCOMMITTED | READ-COMMITTED | REPEATABLE-READ | SERIALIZABLE}`
+
 用户可以用SET TRANSACTION语句改变单个会话或者所有新进连接的隔离级别。它的语法如下：
 
-SET [SESSION | GLOBAL] TRANSACTION ISOLATION LEVEL {READ UNCOMMITTED | READ COMMITTED | REPEATABLE READ | SERIALIZABLE}
+`SET [SESSION | GLOBAL] TRANSACTION ISOLATION LEVEL {READ UNCOMMITTED | READ COMMITTED | REPEATABLE READ | SERIALIZABLE}`
+
 注意：默认的行为（不带session和global）是为下一个（未开始）事务设置隔离级别。如果你使用GLOBAL关键字，语句在全局对从那点开始创建的所有新连接（除了不存在的连接）设置默认事务级别。你需要SUPER权限来做这个。使用SESSION 关键字为将来在当前连接上执行的事务设置默认事务级别。 任何客户端都能自由改变会话隔离级别（甚至在事务的中间），或者为下一个事务设置隔离级别。 
 
 你可以用下列语句查询全局和会话事务隔离级别：
@@ -16,9 +19,9 @@ SELECT @@session.tx_isolation;
 SELECT @@tx_isolation;
 
 ----以上手册中的理论知识;
-===========================================================================================
+------------------------------------------------------------------------------------------------------------------
        隔离级别               脏读（Dirty Read）          不可重复读（NonRepeatable Read）     幻读（Phantom Read） 
-===========================================================================================
+
 
 未提交读（Read uncommitted）        可能                            可能                       可能
 
@@ -28,7 +31,7 @@ SELECT @@tx_isolation;
 
 可串行化（Serializable ）                不可能                          不可能                     不可能
 
-===========================================================================================
+-------------------------------------------------------------------------------------------------------------------
 
 ·未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据
 
