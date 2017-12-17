@@ -14,22 +14,25 @@
 
 你可以用下列语句查询全局和会话事务隔离级别：
 
-SELECT @@global.tx_isolation;
-SELECT @@session.tx_isolation;
-SELECT @@tx_isolation;
+`SELECT @@global.tx_isolation;`
 
-----以上手册中的理论知识;
+`SELECT @@session.tx_isolation;`
+
+`SELECT @@tx_isolation;`
+
+
+以上手册中的理论知识;
 ------------------------------------------------------------------------------------------------------------------
-       隔离级别               脏读（Dirty Read）          不可重复读（NonRepeatable Read）     幻读（Phantom Read） 
+    隔离级别                     脏读（Dirty Read）             不可重复读（NonRepeatable Read）         幻读（Phantom Read） 
 
 
-未提交读（Read uncommitted）        可能                            可能                       可能
+未提交读（Read uncommitted）        可  能                                可  能                            可  能
 
-已提交读（Read committed）          不可能                          可能                        可能
+已提交读（Read committed）          不可能                                可  能                            可  能
 
-可重复读（Repeatable read）          不可能                          不可能                     可能
+可重复读（Repeatable read）         不可能                                不可能                            可  能
 
-可串行化（Serializable ）                不可能                          不可能                     不可能
+可串行化（Serializable ）           不可能                                不可能                            不可能
 
 -------------------------------------------------------------------------------------------------------------------
 
