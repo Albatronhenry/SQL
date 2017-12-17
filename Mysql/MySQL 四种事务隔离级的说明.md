@@ -444,4 +444,6 @@ MySQL InnoDB的可重复读并不保证避免幻读，需要应用使用加锁�
 
 四个级别逐渐增强，每个级别解决一个问题。事务级别越高,性能越差,大多数环境read committed 可以用.记住4个隔离级别的特点(上面的例子);
 
-[万物之中,希望至美](http://www.cnblogs.com/zhoujinyi/p/3437475.html) 
+~~~~~~~~~~~~~~~~~~~[万物之中,希望至美]
+(http://www.cnblogs.com/zhoujinyi/p/3437475.html/)~~~~~~~~~~~~~~~~~~~
+[用友政务](http://www.yonyougov.com/)  
