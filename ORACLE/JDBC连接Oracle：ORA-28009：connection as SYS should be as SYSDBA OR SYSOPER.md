@@ -25,6 +25,12 @@ public class LinkOracle {
      @Test
      public void testJdbc() throws SQLException {
     	 String driver="oracle.jdbc.OracleDriver";
+```
+-------------
+* 注意连接oracle是+ thin
+-------------
+
+``` 
     	 String url="jdbc:oracle:thin:@192.168.201.129:1521:orcl";
 ```       
 ------------------------------------      
