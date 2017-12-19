@@ -37,9 +37,10 @@ public class LinkOracle {
 ------------- 
 *  用户名设置为username =` "sys as sysdba" `，其他不变
 ------------- 
- `     String username= " sys as sysdba ";  `
-   
-       
+
+ `     String username= " sys as sysdba ";  `  
+ 
+-------------       
 ```       
     	 String password="root111";
     	 try {
