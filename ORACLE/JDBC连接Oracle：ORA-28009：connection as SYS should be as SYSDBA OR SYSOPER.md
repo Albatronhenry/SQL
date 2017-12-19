@@ -32,10 +32,13 @@ public class LinkOracle {
 
 ``` 
     	 String url="jdbc:oracle:thin:@192.168.201.129:1521:orcl";
-```       
-------------------------------------      
-      String username= " sys as sysdba ";  
-------------------------------------     
+```   
+
+------------- 
+*  用户名设置为username =` "sys as sysdba" `，其他不变
+------------- 
+ `     String username= " sys as sysdba ";  `
+   
        
 ```       
     	 String password="root111";
