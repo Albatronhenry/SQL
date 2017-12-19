@@ -27,7 +27,7 @@ public class LinkOracle {
     	 String driver="oracle.jdbc.OracleDriver";
 ```
 -------------
-* 注意连接oracle是+ thin
+* 注意连接oracle是+ ` thin `
 -------------
 
 ``` 
