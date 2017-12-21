@@ -10,7 +10,7 @@
 
 
 
-```
+```java
 package testoracle01;
 
 import java.sql.Connection;
@@ -30,7 +30,7 @@ public class LinkOracle {
 * 注意连接oracle是+ ` thin `
 -------------
 
-``` 
+```java 
     	 String url="jdbc:oracle:thin:@192.168.201.129:1521:orcl";
 ```   
 
@@ -38,12 +38,12 @@ public class LinkOracle {
 *  用户名设置为username =` "sys as sysdba" `，其他不变
 ------------- 
 
- ```
+ ```java
          String username= " sys as sysdba ";  
  ```  
  
 -------------       
-```       
+```java       
     	 String password="root111";
     	 try {
 			Class.forName(driver);
