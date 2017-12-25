@@ -21,4 +21,6 @@ MyCat里，都是一个传统的数据库表，支持标准的SQL语句进行数
 就好了，这就是Mycat的核心作用。 
   
    *  所以可以这样理解：数据库是对底层存储文件的抽象，而Mycat是对数据库的抽象。 
+   
+   [R    W]（http://blog.csdn.net/nxw_tsp/article/details/56277430）
 
