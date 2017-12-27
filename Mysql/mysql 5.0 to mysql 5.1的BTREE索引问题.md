@@ -1,4 +1,4 @@
-### [mysql 5.0 to mysql 5.* 不同版本之间的BTREE索引问题](http://blog.51cto.com/bighuamao/564260)
+### [mysql 5.0 to mysql 5.* 不同版本之间的BTREE索引问题](https://www.cnblogs.com/wujilong/archive/2013/02/04/2892006.html)
 
 * B-tree索引是数据库中存取和查找文件(称为记录或键值)的一种方法。B-tree算法减少定位记录时所经历的中间过程，从而加快存取速度。一个B-tree的典型例子就是硬
 盘中的结点。与内存相比，硬盘必须花成倍的时间来存取一个数据元素，这是因为硬盘的机械部件读写数据的速度远远赶不上纯 电子媒体的内存。与一个结点两个分支的二元
