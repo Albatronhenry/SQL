@@ -15,7 +15,7 @@
 
    * 如果想导入到 mysql 5.0 则调整 USING BTREE 这类指定索引类型语句的位置到中间, 如下:
    
-  ---------- 
+---------- 
   
 KEY `key_index` USING BTREE  (`datatype`,`stime`,`line`,`mcode`)
 
