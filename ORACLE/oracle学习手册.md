@@ -30,8 +30,11 @@
 [常用命令：](https://www.cnblogs.com/flgg/p/6136586.html)
 
 一、ORACLE的启动和关闭 
+
 1、在单机环境下 
+
 要想启动或关闭ORACLE系统必须首先切换到ORACLE用户，如下 
+
 su - oracle 
 
 a、启动ORACLE系统 
@@ -62,7 +65,9 @@ ORACLE instance started.
 
 
 2、在双机环境下 
+
 要想启动或关闭ORACLE系统必须首先切换到root用户，如下 
+
 su － root 
 
 a、启动ORACLE系统 
@@ -77,13 +82,16 @@ Oracle数据库有哪几种启动方式
 说明： 
 
 有以下几种启动方式： 
+
 1、startup nomount 
+
 非安装启动，这种方式启动下可执行：重建控制文件、重建数据库 
 
 读取init.ora文件，启动instance，即启动SGA和后台进程，这种启动只需要init.ora文件。 
 
 
 2、startup mount dbname 
+
 安装启动，这种方式启动下可执行： 
 数据库日志归档、 
 数据库介质恢复、 
@@ -646,7 +654,8 @@ select sum(successcount),servicetype from tbl_middlemt0411 group by servicetype
 
 ----------------
 
-[execute immediate的简单用法(oracle)(https://www.cnblogs.com/zj0208/p/6088097.html)
+
+[execute immediate的简单用法(oracle)](https://www.cnblogs.com/zj0208/p/6088097.html)
 
 create or replace procedure proc_test(
 --参数区域
