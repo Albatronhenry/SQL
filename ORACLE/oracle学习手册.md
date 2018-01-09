@@ -27,7 +27,7 @@
 
 ------------------------------------------------------------------------------------------------
 
-常用命令：
+[常用命令：](https://www.cnblogs.com/flgg/p/6136586.html)
 
 一、ORACLE的启动和关闭 
 1、在单机环境下 
@@ -646,7 +646,7 @@ select sum(successcount),servicetype from tbl_middlemt0411 group by servicetype
 
 ----------------
 
-execute immediate的简单用法(oracle)
+[execute immediate的简单用法(oracle)(https://www.cnblogs.com/zj0208/p/6088097.html)
 
 create or replace procedure proc_test(
 --参数区域
