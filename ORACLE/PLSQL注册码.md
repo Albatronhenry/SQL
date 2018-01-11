@@ -1,4 +1,4 @@
-注册码：
+[注册码：](http://blog.csdn.net/simon_1/article/details/51384207)
 
 -------
 
