@@ -146,7 +146,7 @@ SCOTT 1
 
  
 
- * 3. NULLIF函数
+ * 3 NULLIF函数
 
 NULLIF(exp1,expr2)函数的作用是如果exp1和exp2相等则返回空(NULL)，否则返回第一个值。
 下面是一个例子。使用的是oracle中HR schema，如果HR处于锁定，请启用
@@ -189,7 +189,7 @@ Whalen AD_ASST AD_ASST
 
 可以看到凡是employee。job_id和job_histroy.job_id相等的，都会在结果中输出NULL即为空，否则显示的是employee。job_id
 
- * 4.Coalesce函数
+ * 4 Coalesce函数
 
 Coalese函数的作用是的NVL的函数有点相似，其优势是有更多的选项。
 
