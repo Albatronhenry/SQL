@@ -1,4 +1,4 @@
-#### 流程
+#### [流程](http://blog.csdn.net/u010653908/article/details/53695666)
 * 1、首先，我们可以先建立自己的一个用户表空间，创建表空间的格式如下：
 
 ```sql
@@ -54,7 +54,7 @@ imp utest/upassword  file=D:\20140227.dmp full=y ignore=y (将文件导入到我
 
 ----------------
 
-#### oracle导入提示“IMP-00010：不是有效的导出文件，头部验证失败”的解决方案
+#### [oracle导入提示“IMP-00010：不是有效的导出文件，头部验证失败”的解决方案](http://blog.csdn.net/hwhua1986/article/details/49336765)
 
 ---------------
 
