@@ -14,7 +14,7 @@
 
 * 3、修改需要更改的用户名
 
-  * UPDATE DBA_USERS SET NAME=‘新的用户名’ WHERE USER_ID=71；   或者（UPDATE USER$ SET NAME=‘新的用户名’ WHERE user#=71;）
+  * UPDATE DBA_USERS SET USER_NAME=‘新的用户名’ WHERE USER_ID=71；   或者（UPDATE USER$ SET NAME=‘新的用户名’ WHERE user#=71;）
   * COMMIT;             一定要提交,不然更新不生效
 
 
