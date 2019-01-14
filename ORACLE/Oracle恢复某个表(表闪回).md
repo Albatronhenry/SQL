@@ -4,11 +4,11 @@
 
 1、当想恢复某张表中的数据到某个时间时，可执行下面语句：
 ```sql
-SQL>flashback table sysuser to timestamp to_date('2017-12-21 10:02:55','YYYY-MM-DD HH24:MI:SS');
+SQL>flashback table gl_balance to timestamp to_date('2019-01-12 17:00:00','YYYY-MM-DD HH24:MI:SS');
 ```
 2、若出现ORA-08189异常，则执行以下语句授权即可：
 ```sql
-alter table sysuser enable row movement;
+alter table gl_balance enable row movement;
 ```
 3、在执行1的flashback语句即可成功。
 做个记录，以便后续之用。
