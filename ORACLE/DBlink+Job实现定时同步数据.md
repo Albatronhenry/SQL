@@ -33,7 +33,7 @@ end;
 ```sql
 begin
   sys.dbms_job.change(job => 86,
-                      what => 'test_job_zhzj20190522;',
+                      what => 'zfxt_from_zhzj2019;',
                       next_date => to_date('22-05-2019 14:23:02', 'dd-mm-yyyy hh24:mi:ss'),
                       interval => 'sysdate+2/24/60');
   commit;
@@ -41,7 +41,7 @@ end;
 /
 -------------------------
 --创建job
-What      填入 zfxt_from_zhzj2019;
+What      填入 zfxt_from_zhzj2019; (对应存储过程名注意此处必须加上分号)
 Next date 填入 SYSDATE
 Interval  填入 sysdate+2/24/60
 
