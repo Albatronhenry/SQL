@@ -19,7 +19,7 @@ select decode(grouping(to_char(t.bill_type)),
 -----------------------------------------------
 ```
 
-(因项目实现逻业务辑需要多次联合查询，导致卡慢，故使用with as 优化)[https://www.cnblogs.com/mingforyou/p/8295239.html]
+[因项目实现逻业务辑需要多次联合查询，导致卡慢，故使用with as 优化](https://www.cnblogs.com/mingforyou/p/8295239.html)
 ```sql
 1-------------------------
 --相当于建了个t临时表
